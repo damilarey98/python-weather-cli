@@ -60,6 +60,8 @@ def main():
         weather = get_weather(latitude, longitude)
 
         print(f"\nWeather in {city.title()}")
+        print(f"Latitude: {latitude}")
+        print(f"Longitude: {longitude}")
         print(f"Temperature: {weather['temperature_2m']}°C")
         print(f"Wind speed: {weather['wind_speed_10m']} km/h")
 
