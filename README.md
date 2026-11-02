@@ -53,6 +53,30 @@ python weather.py London
 python weather.py New York
 ```
 
+## Running Automated Tests
+
+This project uses pytest for automated testing.
+
+Install the dependencies:
+
+```powershell
+python -m pip install -r requirements.txt
+```
+
+Run all tests:
+
+```powershell
+python -m pytest -v
+```
+
+The tests simulate weather API responses, so they do not require live weather API requests.
+
+The test suite checks:
+- Successful city coordinate retrieval.
+- Handling of unknown cities.
+- Handling of API connection failures.
+- Successful weather data retrieval.
+
 ## APIs
 
 This project uses the free Open-Meteo geocoding API to find city coordinates and the Open-Meteo forecast API to retrieve current weather information.
